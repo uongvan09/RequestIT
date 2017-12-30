@@ -38,6 +38,10 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <style type="text/css">
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
         .sidebar{
              background-color: #333e48;
         }
@@ -57,6 +61,18 @@
          }
         .bg-red{
             background-color: #85CE36 !important;
+         }
+         .box.box-solid.box-primary>.box-header{
+            background-color: #14520e;
+         }
+         .text-center a{
+            color: #14520e;
+         }
+         .pagination>.active>a{
+            background-color: #14520e;
+         }
+         .pagination>.active>a:hover{
+            background-color: #14520e;
          }
     </style>
 </head>

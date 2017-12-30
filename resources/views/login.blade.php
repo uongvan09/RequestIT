@@ -37,6 +37,11 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <style type="text/css">
+        
+        .login-page{
+            background-image: url("https://i.imgur.com/89fkNUd.png");
+            background-size: cover;
+        }
         button[type=submit]{
             background-color: #85CE36;
             color: #fff;
@@ -104,6 +109,7 @@
 <!-- Bootstrap WYSIHTML5 -->
 <script src="{{ URL::asset('public/theme/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') }}"></script>
 <!-- Slimscroll -->
+
 <script src="{{ URL::asset('public/theme/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
 <!-- FastClick -->
 <script src="{{ URL::asset('public/theme/bower_components/fastclick/lib/fastclick.js') }}"></script>

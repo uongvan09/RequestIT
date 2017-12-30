@@ -16,17 +16,17 @@
             {{ csrf_field() }}
             <div class="box box-primary box-solid">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Create Request</h3>
+                    <h3 class="box-title">Thêm công việc</h3>
                 </div>
                 <div class="box-body">
                     <div class="form-group">
-                        <label class="required" for="request_subject">Request Subject</label>
+                        <label class="required" for="request_subject">Tên công việc</label>
                         <input type="text" class="form-control input-lg" id="request_subject" name="subject" required>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-xs-12">
                             <div class="form-group">
-                                <label class="required" for="request_priority">Priority</label>
+                                <label class="required" for="request_priority">Mức độ ưu tiên</label>
                                 <select class="form-control" id="request_priority" name="priority_id">
                                     @foreach($pr as $priority)
                                         <option value="{{ $priority->id }}">{{ $priority->name }}</option>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="col-sm-6 col-xs-12">
                             <div class="form-group">
-                                <label class="required" for="request_deadline">Deadline</label>
+                                <label class="required" for="request_deadline">Ngày hết hạn</label>
                                 <div class="input-group date">
                                     <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
                                     <input type="text" class="form-control pull-right" id="request_deadline"
@@ -48,7 +48,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-xs-12">
                             <div class="form-group">
-                                <label class="required" for="request_location">Department</label>
+                                <label class="required" for="request_location">Bộ phận IT</label>
                                 <select class="form-control" id="request_location" name="department_id">
                                     @foreach($dep as $department)
                                         <option value="{{ $department->id }}">{{ $department->name }}</option>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="col-sm-6 col-xs-12">
                             <div class="form-group">
-                                <label for="request_relater">Relater(s)</label>
+                                <label for="request_relater">Người liên quan</label>
                                 <select class="form-control select2" id="request_relater" name="relaters[]" multiple="multiple" style="width:100%;">
                                     @foreach($users as $user)
                                         <option value="{{ $user->id }}">{{ $user->fullname }}</option>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="required" for="request_content">Content</label>
+                        <label class="required" for="request_content">Nội dung</label>
                         <textarea id="request_content" name="content" class="form-control" style="height:250px" required></textarea>
                     </div>
                 </div>

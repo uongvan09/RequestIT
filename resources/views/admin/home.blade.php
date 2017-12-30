@@ -205,5 +205,5 @@
 </aside>
 @endsection
 @section('js')
-    //extend custome link js here
+    <!--extend custome link js here-->
 @endsection
